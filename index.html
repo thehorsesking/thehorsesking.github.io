@@ -3,24 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwani Bhati Resume</title>
+    <title>Ashwani Bhati - Data Analyst</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        /* Header */
+        .header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            opacity: 0.8;
+        }
+
+        /* Resume Section */
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #e55d00;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            iframe {
+                height: 500px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .header h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Ashwani Bhati </h1>
-    <h2>Data Analyst </h2>
-    <h3>Hi! I am a data analyst based out of Sweden. You can view my resume below.</h3>
-    <!-- Embed the PDF for direct view -->
-    <iframe src="Ashwani_Bhati_CV.pdf" width="100%" height="600px"></iframe>
-     <p>
-        <a href="Ashwani_Bhati_CV.pdf" download="Ashwani_Bhati_CV.pdf">Download My Resume (PDF)</a>
-    </p>
 
-    <h4>Connect With Me</h4>
-    <div class="social-links">
-     <a href="https://www.linkedin.com/in/ashwanibhati/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png" alt="Ashwani Bhati LinkedIn Profile" height="30" width="30">
-     </a>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Ashwani Bhati</h1>
+        <h2>Data Analyst | Sweden</h2>
     </div>
-   
+
+    <!-- Resume Container -->
+    <div class="container">
+        <h3>Hi! I am a data analyst based in Sweden. You can view my resume below.</h3>
+
+        <!-- PDF Embed -->
+        <iframe src="Ashwani_Bhati_CV.pdf"></iframe>
+
+        <!-- Download Resume Button -->
+        <p>
+            <a href="Ashwani_Bhati_CV.pdf" download="Ashwani_Bhati_CV.pdf" class="download-btn">Download My Resume (PDF)</a>
+        </p>
+
+        <!-- Social Links -->
+        <h4>Connect With Me</h4>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ashwanibhati/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png" alt="LinkedIn Profile">
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
